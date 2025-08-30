@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+        .highlight{
+            border: 5px solid darkblue;
+        }
+
+        .result{
+
+            border: 2px solid darkgreen;
+            background-color: green;
+            color:white;
+            margin: 0.5em;
+            padding: 0.5em;
+            font-size: 2rem;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Simple JQuery Calculator</h1>
+
+    <input type="number" name="num_1" id="num_1">
+    <input type="number" name="num_2" id="num_2">
+
+    <div class="result_div">
+
+
+    </div>
+
+    <button class="ShowResult">Show Result</button>
+    <button class="HideResult"> Hide Result</button>
+
+
+
+
+        <script>
+            $(document).ready(function(){
+
+                $("#num_1, #num_2").focus(function(){
+                    $(this).addClass("highlight");
+                }).blur(function(){
+                    $(this).toggleClass("highlight");
+                })
+                
+
+           
+
+                $(".ShowResult").click(function(){
+                    let a = parseFloat($("#num_1").val());
+                    let b = parseFloat($("#num_2").val());
+                    Number(a);
+                    Number(b);
+                    let c = a + b;
+
+                    $(".result_div").text("Sum:" + c)
+                    $(".result_div").addClass("result")
+                
+                });
+
+
+
+
+            })
+
+
+
+        </script>
+
+    
+</body>
+</html>

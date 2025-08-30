@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <style>
+
+        .box{
+            width: 500px;
+            height:min-content;
+            border: 2px solid;
+            margin: 0 auto;
+        }
+
+        img{
+            display: block;
+            width: 500px;
+            height: 500px;
+            border: 2px solid;
+            margin: 0 auto;
+
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <p class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae dolorum culpa praesentium doloribus, tempora ipsum mollitia animi placeat deserunt beatae delectus ea sunt? Esse itaque, velit ullam eveniet dolorem error. Id in nesciunt dignissimos ipsa quod tempore ipsum voluptatum ex. Nesciunt necessitatibus asperiores sunt laudantium pariatur recusandae suscipit enim provident ducimus maxime deleniti, voluptatibus tenetur fuga nihil itaque, accusantium eaque similique! Error ad consectetur enim obcaecati vero iure eos eveniet perspiciatis accusantium. Maxime numquam quis architecto, fugiat impedit facilis earum explicabo quas delectus esse quod deleniti dignissimos magni animi repudiandae quae officia veritatis laudantium, in rem error. Iure, expedita vero.</p>
+
+
+
+
+    <button class="hide">hide</button>
+    <button class="show">show</button>
+    <button class="toggle">toggle</button>
+    <button class="change_txt">change_txt</button>
+    <button class="slide_down">slide_down</button>
+    <br>
+    <img src="images/flower.jfif" alt="">
+
+
+    <script>
+        $(document).ready(function(){
+
+            $(".hide").click(function(){
+                $(".box").hide()
+
+            })
+
+            $(".show").click(function(){
+                $(".box").show()
+
+            })
+
+            $(".toggle").click(function(){
+                $(".box").toggle()
+
+            })
+
+            $(".change_txt").click(function(){
+                $(".box").text("new text")
+
+            })
+
+            $(".box").hover(function(){
+                $(".box").css("background-color","lightblue")
+
+            })
+
+            $(".slide_down").click(function(){
+                $(".box").slideDown()
+
+            })
+
+            $("img").click(function(){
+                $("img").fadeOut()
+                $("img").fadeIn()
+                
+            })
+
+            
+
+            
+
+        })
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>

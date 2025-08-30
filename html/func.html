@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple functions</title>
+</head>
+
+<body>
+    <!-- <button onclick="add(2, 6)">ADDITION</button>
+    <button onclick="sub(2, 6)">SUBTRACTION</button>
+    <button onclick="multi(2, 6)">MULTIPLICATION</button>
+    <button onclick="div(2, 6)">DIVISON</button> -->
+    <button onclick="login ()">Login</button>
+
+
+
+
+    <script>
+        
+
+
+
+
+
+
+
+
+
+
+
+        // function login() {
+        //     var username = prompt("Enter username")
+        //     var password = prompt("Enter password")
+
+        //     if (username == "maryam" && password === "1234") {
+        //         alert("Login Successful")
+        //     }
+
+        //     else {
+        //         alert("Login Failed")
+        //     }
+        // }
+
+        function login(amount) {
+            var amount = prompt("Enter your amount");
+
+
+            if (amount > 5000) {
+
+                var discount = amount * (50 / 100)
+                var discounted_amount = amount - discount
+                document.write("You got 30% discount, your discounted amount is: " + discounted_amount)
+
+            }
+            else if (amount > 3000) {
+                var discount = amount * (20 / 100)
+                var discounted_amount = amount - discount
+                document.write("You got 20% discount, your discounted amount is: " + discounted_amount)
+
+
+            }
+            else if (amount > 1000) {
+                var discount = amount * (10 / 100)
+                var discounted_amount = amount - discount
+                document.write("You got 10% discount")
+
+            }
+            else {
+                document.write("No discount")
+            }
+
+        }
+
+
+
+        // function add(num1, num2) {
+        //     var result = num1 + num2
+        //     alert(result)
+        // }
+
+
+        // function sub(num1, num2) {
+        //     var result = num1 - num2
+        //     alert(result)
+
+        // }
+
+
+        // function multi(num1, num2) {
+        //     var result = num1 * num2
+        //     alert(result)
+
+        // }
+
+
+        // function div(num1, num2) {
+        //     var result = num1 / num2
+        //     alert(result)
+
+        // }
+
+
+    </script>
+</body>
+
+</html>

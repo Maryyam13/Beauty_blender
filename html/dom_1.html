@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice 2</title>
+</head>
+
+<body>
+
+    <ul id="my_UList">
+
+    </ul>
+
+    <button onclick="list_addition()">ADD ITEMS</button>
+
+    <script>
+        var count = 0
+        function list_addition() {
+            // var count = 0
+            count++
+            let my_list = document.createElement("li")
+            my_list.innerText = `item ${count}`
+            document.getElementById("my_UList").appendChild(my_list)
+
+
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

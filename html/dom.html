@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Practice 1</title>
+</head>
+
+<body>
+    <p id="my_para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sunt quis atque neque
+        voluptatum dolorum!</p>
+
+    <!-- remove text -->
+    <button id="btn" onclick="remove_text()">Remove</button>
+
+
+    <!-- change background -->
+    <button onclick="change_backgd()">Change background color</button>
+
+
+
+    <!-- show & hide text -->
+    <button onclick="hideTxt()">HIDE TEXT</button>
+    <button onclick="showTxt()">SHOW TEXT</button>
+
+
+
+    <!-- increse font on button click & increment -->
+    <button onclick="fontChange()">Change font</button>
+
+    <hr>
+    <p id="counter">0</p>
+
+    <!-- increment -->
+    <button onclick="number_counter()">Increase number</button>
+
+
+
+
+
+
+<!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>   SCRIPT STARTS HERE <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< -->
+
+
+    <script>
+
+        // remove text & button color change
+        function remove_text() {
+            document.getElementById('my_para').innerText = "TEXT CHANGED"
+            document.body.style.backgroundColor = "lightblue"
+            document.getElementById("btn").style.backgroundColor = "pink"
+
+        }
+
+        // change back ground color
+        function change_backgd() {
+            document.getElementById("my_para").style.backgroundColor = "yellow"
+        }
+
+        // show & hide text
+        function hideTxt() {
+            document.getElementById("my_para").style.display = "none"
+        }
+
+        function showTxt() {
+            document.getElementById("my_para").style.display = "block"
+        }
+
+        
+        
+        // increse font on button click 
+        var count = 30
+        function fontChange() {
+            count++
+            document.getElementById("my_para").style.fontSize = `${count}px`
+        }
+
+
+
+        // increment
+        var count = 0
+        function number_counter() {
+            count++
+            document.getElementById("counter").innerText = count
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.wrapper{
+    
+    display: inline-block;
+    margin-top: 200px;
+    /* border: 2px solid; */
+    
+
+    
+}
+
+
+
+.btn{
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 16px 21px;
+    margin-bottom: 10px;
+    transition: all 2s ease ;
+}
+
+.btn:hover{
+    background-color: rgb(109, 205, 237);
+}
+
+.line{
+    border: 2px solid;
+    
+    animation: width_change 1s infinite alternate;
+   
+    
+}
+
+@keyframes width_change {
+    0% {width: 0%}
+    50% {width: 100%}
+    100% {width: 0%}
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add products to list</title>
+    <link rel="stylesheet" href="Styling/Dom_2.css">
+</head>
+
+<body>
+    <h1>Add products to list</h1>
+    <br>
+    Enter Product: <input type="text" id="Product">
+    <button onclick="addProduct()">Add Product</button>
+    
+
+    <br>
+    <ul id="my_product_list">
+
+    </ul>
+
+
+
+    <script>
+        function addProduct() {
+            let user_input = document.getElementById("Product").value.trim()
+            if (user_input != "") {
+                let list_item = document.createElement("li")
+
+                list_item.innerText = user_input
+
+
+                document.getElementById("my_product_list").appendChild(list_item).classList.add("highlight")
+                document.getElementById("Product").value = ""
+
+                
+
+            }
+            else{
+                alert('Enter Product')
+            }
+        }
+
+       
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

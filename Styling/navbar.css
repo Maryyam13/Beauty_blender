@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> --> */
+                                                   /* Created NAVBAR */
+/* <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> --> */
+
+
+
+
+.navBar_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: skyblue;
+    /* border: 2px solid; */
+
+}
+
+.navBar_main .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+    margin: 8px;
+    padding: 5px;
+
+
+}
+
+.navBar_main .logo img {
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    /* border: 2px solid; */
+
+}
+
+.navBar_main .logo a {
+    padding: 10px;
+    /* border: 2px solid; */
+
+}
+
+
+.navBar_main .nav_items {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid; */
+
+}
+
+.navBar_main .nav_items .nav_links {
+    list-style-type: none;
+    /* border: 2px solid; */
+    margin: 8px;
+    padding: 5px;
+
+}
+
+/* <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> --> */
+                                                   /* Created Hero_section */
+/* <!-- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> --> */
+
+
+
+
+
+.hero_section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* background: linear-gradient(45deg, rgb(136, 136, 227), rgb(235, 157, 157)); */
+    /* background-color: azure; */
+    animation: changeColor 2s infinite;
+    align-items: center;
+    /* margin-top: 3px; */
+
+}
+
+@keyframes changeColor{
+    /* 0% {background-color: rgb(137, 236, 236);} */
+    0% {background:linear-gradient(45deg, rgb(137, 236, 236), rgb(123, 123, 222));}
+    
+    /* 50% {background-color: rebeccapurple;} */
+    50% {background:linear-gradient(45deg, red,rebeccapurple);}
+    
+   
+
+    /* 100% {background-color: darkgoldenrod;} */
+    100% {background:linear-gradient(45deg, darkgoldenrod, green);}
+
+}
+
+.hero_section .hero_div1 {
+    /* border: 2px solid; */
+    margin-left: 50px;
+    width: 800px;
+}
+
+.hero_section .hero_div1 .hero_item {
+    margin: 8px;
+    padding: 8px;
+}
+
+.hero_section .hero_div1 h1 {
+    color: purple;
+    font-size: 4rem;
+}
+
+.hero_section .hero_div1 p {
+    color:khaki;
+    font-size: large;
+}
+
+.hero_section .hero_div1 button {
+    padding: 8px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: rgb(137, 171, 235);
+}
+
+
+
+
+
+.hero_div2 img{
+    /* border: 2px solid; */ 
+    animation: squareToCircle 2s infinite;
+
+}
+
+@keyframes squareToCircle{
+    0%, 100% {border-radius: 0%;}
+    50% {border-radius: 50%;}
+}
+

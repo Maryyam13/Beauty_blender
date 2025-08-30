@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styling/form.css">
+</head>
+
+<body>
+    <div class="form_container">
+
+        <h2>Registration Form</h2>
+        <form action="" class="form">
+
+            <input type="text" name="name" id="name" placeholder="Enter Your Name" pattern="[A-Z a-z]{3,30}">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" pattern="[A-Z a-z][0-9][!@#$%^&*-_. ]{3,30}@[a-z]{1,10}.[com|edu|pk]">
+            <input type="text" name="username" id="username" placeholder="Enter Username" pattern="[A-Z a-z]{3,30}">
+            <input type="text" name="phone_number" id="phone_number" placeholder="Enter Your Phone Number" pattern="^[0-9]{3}-[0-9]{3}-[0-9]{3}$">
+            <input type="password" name="password" id="password" placeholder="Enter Password" pattern="[A-Z a-z][0-9][!@#$%^&*-_. ]{3,30}">
+            <input type="password" name="password" id="password" placeholder="Confirm Password" pattern="[A-Z a-z][0-9][!@#$%^&*-_. ]{3,30}">
+            <input type="submit" value="Register">
+            
+        </form>
+
+
+
+    </div>
+</body>
+
+</html>

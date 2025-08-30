@@ -1,0 +1,91 @@
+
+.portfolio_section {
+    background-color: rgb(244, 244, 225);
+}
+
+
+.port_text {
+    /* border: 2px solid; */
+    text-align: center;
+    padding: 10px;
+    /* font: 2rem; */
+}
+
+.port_para{
+    font-size: 2rem;
+
+}    
+
+
+.port_text h3{
+    font-family: "Fjalla One", sans-serif;
+}
+
+.port_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.port_buttons .btn{
+    /* border: 2px solid; */
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(162, 240, 236);
+    border-radius: 10px;
+    
+
+}
+
+
+.port_images {
+    /* border: 2px solid; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    width: 80rem;
+    margin: 0 auto;
+    padding: 50px;
+
+}
+
+.images_overlay img{
+    width: 100%;
+}
+
+
+
+.images_overlay{
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay_effect{
+    background-color: rgba(199, 165, 234, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+
+}
+.images_overlay:hover .overlay_effect{
+    transform: translateY(0);
+}
+
+.overlay_effect a{
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   
+}
